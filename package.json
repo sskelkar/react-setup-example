@@ -1,0 +1,30 @@
+{
+  "name": "react-setup-example",
+  "version": "1.0.0",
+  "description": "A simple React app to demostrate all the steps required in setting up a modern JavaScript project",
+  "author": "s.kelkar",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babelify": "^7.3.0",
+    "chai": "^3.5.0",
+    "enzyme": "^2.7.0",
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.0.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "jsdom": "^9.9.1",
+    "mocha": "^3.2.0",
+    "react": "^15.4.2",
+    "react-addons-test-utils": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "scripts": {
+    "test": "mocha test/browser.js test/**/*.spec.js"
+  }
+}
