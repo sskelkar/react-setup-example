@@ -22,7 +22,7 @@ grunt.initConfig({
         'build/bundle.js': ['src/index.js']
       },
       options: {
-        transform: [[ 'babelify', { 'presets': [ 'es2015', 'react' ] }  ]]
+        transform: [ 'react-templatify', [ 'babelify', { 'presets': [ 'es2015', 'react' ] }  ] ]
       }
     }
   }

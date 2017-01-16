@@ -6,9 +6,9 @@ import App from '../../src/js/app';
 describe('<App />', () => {
 
   it('should render the hello world message', () => {
-    const wrapper = shallow(<App/>);
+    const wrapper = mount(<App />);
 
-    expect(wrapper.find('h2').text()).to.equal('Helloooo World!!');
+    expect(wrapper.find('h3').text()).to.equal('Helloooo World!!');
   });
 
 });

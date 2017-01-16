@@ -1,11 +1,10 @@
 import React from 'react';
+import template from './templates/app.rt';
 
 class App extends React.Component {
-  render() {
-    return (
-      <div><h2>Helloooo World!!</h2></div>
-    );
-  }
+    render() {
+        return template();
+    }
 }
 
 export default App;

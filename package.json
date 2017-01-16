@@ -15,16 +15,35 @@
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-uglify": "^2.0.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean": "^0.3.2",
+    "gulp-cli": "^1.2.2",
+    "gulp-react-templates": "^0.2.0",
     "jsdom": "^9.9.1",
     "mocha": "^3.2.0",
+    "mocha-react-templates-compiler": "^2.1.0",
     "react": "^15.4.2",
+    "react-addons": "^0.9.1-deprecated",
     "react-addons-test-utils": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-templates": "^0.6.1",
+    "react-templatify": "^0.5.2",
+    "react-test-utils": "0.0.1"
   },
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "lodash": "^4.17.4"
   },
   "scripts": {
-    "test": "mocha test/browser.js test/**/*.spec.js"
+    "test1": "mocha  --require test/browser.js test/**/*.spec.js",
+
+    "test": "npm run testbuild && npm run testartifacts && npm run testclean",
+    "testbuild": "gulp testbuild",
+    "testartifacts": "mocha --recursive ./testbuild/js/test",
+    "testclean": "gulp clean"
+
+
+
   }
 }
